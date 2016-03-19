@@ -14,7 +14,8 @@ LOCAL_SRC_FILES := src/rar.cpp src/strlist.cpp src/strfn.cpp src/pathfn.cpp src/
 LOCAL_C_INCLUDES := src
 
 LOCAL_CFLAGS := -O2 -Wall -DUNRAR -D__BIONIC__ \
-                -D_LARGEFILE_SOURCE -DNOVOLUME -DRAR_NOCRYPT
+                -D_LARGEFILE_SOURCE -DNOVOLUME -DRAR_NOCRYPT \
+                -ffunction-sections -fdata-sections
 
 LOCAL_ARM_MODE := arm
 
